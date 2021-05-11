@@ -1,2 +1,2 @@
 # azure-mining-script
-Pick up a node pool to start mining some crypto assets :)
+Leveraging Azure compute capabilities to bring up a Linux servers node pool and start mining some crypto assets :)
