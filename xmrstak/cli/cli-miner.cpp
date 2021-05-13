@@ -116,7 +116,6 @@ void help()
 	cout << "Supported coin options: " << endl
 		 << algos << endl;
 	cout << "Version: " << get_version_str_short() << endl;
-	cout << "Brought to by fireice_uk and psychocrypt under GPLv3." << endl;
 }
 
 bool read_yes_no(const char* str, std::string default_value = "")
@@ -801,13 +800,9 @@ int main(int argc, char* argv[])
 	printer::inst()->print_str("-------------------------------------------------------------------\n");
 	printer::inst()->print_str(get_version_str_short().c_str());
 	printer::inst()->print_str("\n\n");
-	printer::inst()->print_str("Brought to you by fireice_uk and psychocrypt under GPLv3.\n");
-	printer::inst()->print_str("Based on CPU mining code by wolf9466 (heavily optimized by fireice_uk).\n");
 #ifndef CONF_NO_CUDA
-	printer::inst()->print_str("Based on NVIDIA mining code by KlausT and psychocrypt.\n");
 #endif
 #ifndef CONF_NO_OPENCL
-	printer::inst()->print_str("Based on OpenCL mining code by wolf9466.\n");
 #endif
 	char buffer[64];
 	snprintf(buffer, sizeof(buffer), "\nConfigurable dev donation level is set to %.1f%%\n\n", fDevDonationLevel * 100.0);

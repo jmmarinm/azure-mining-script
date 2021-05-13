@@ -105,8 +105,7 @@ class autoAdjust
 				ctx.name.compare("gfx905") == 0)
 			{
 				/* Increase the number of threads for AMD VEGA gpus.
-				 * Limit the number of threads based on the issue: https://github.com/fireice-uk/xmr-stak/issues/5#issuecomment-339425089
-				 * to avoid out of memory errors
+				 * Limit the number of threads to avoid out of memory errors
 				 */
 				maxThreads = 2024u;
 			}
